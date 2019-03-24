@@ -9,6 +9,11 @@
 <body>
 	<div class="fluid-container">
 		<div class="row">
+			<form>
+				<input type=submit onclick="opensignup()" class="button btn-success" value="Sign Up" style="text-align: right;"/>
+			</form>
+		</div>
+		<div class="row">
 			<form onsubmit="doLogin()">
 			<div class="col-md-4 col-sm-4"></div>
 			<div class="col-md-4 col-sm-4">
@@ -46,7 +51,12 @@
 </body>
 <script type="text/javascript">
 	function doLogin() {
-		document.forms[0].action="Loginservlet.htm";
+		document.forms[1].action="loginController.htm";
+		document.forms[1].method = "POST";
+		document.forms[1].submit();
+	}
+	function opensignup(){
+		document.forms[0].action="signupController.htm";
 		document.forms[0].method = "POST";
 		document.forms[0].submit();
 	}
