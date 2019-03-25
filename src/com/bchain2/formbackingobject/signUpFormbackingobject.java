@@ -12,12 +12,6 @@ public class signUpFormbackingobject {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getUserid() {
-		return userid;
-	}
-	public void setUserid(String userid) {
-		this.userid = userid;
-	}
 	public String getPassword() {
 		return password;
 	}
@@ -36,4 +30,11 @@ public class signUpFormbackingobject {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	public String getUserid() {
+		return userid;
+	}
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+	
 }

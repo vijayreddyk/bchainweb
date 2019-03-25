@@ -4,6 +4,8 @@
 </bean>
 <bean name="/signupController.htm" class="com.bchain2.controllers.signupController">
 </bean>
+<bean name="/homepageController.htm" class="com.bchain2.controllers.HomePageController">
+</bean> 
 <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 	<property name="prefix">
 		<value>/WEB-INF/jsp/</value>

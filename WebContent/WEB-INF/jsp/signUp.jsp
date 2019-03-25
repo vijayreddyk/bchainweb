@@ -23,40 +23,48 @@
 				<tr>
 					<td><b>user name</b></td>
 					<td>
-						<spring:bind path="${commandObject.userName}">
-							<input type="text" class="form-control" id="uname" name="uname"/>
+						<spring:bind path="commandObject.userName">
+							<input type="text" name="<c:out value='${status.expression}'/>"
+										id="<c:out value='${status.expression}'/>"
+										value="<c:out value='${status.value}'/>" class="form-control"/>
 						</spring:bind>
 					</td>
 				</tr>
 				<tr>
-					<td><b>user Id</b></td>
+					<td><b>user id</b></td>
 					<td>
-						<spring:bind path="${commandObject.userId}">
-							<input type="text" class="form-control" id="userid" name="userid"/>
+						<spring:bind path="commandObject.userid">
+							<input type="text" id="<c:out value='${status.expression}'/>"
+										name="<c:out value='${status.expression}'/>" value="<c:out value='${status.value}'/>" class="form-control"/>
 						</spring:bind>
 					</td>
-				</tr>
 				<tr>
 					<td><b>Password</b></td>
 					<td>
-						<spring:bind path="${commandObject.password}">
-							<input type="password" class="form-control" id="password" name="password"/>
+						<spring:bind path="commandObject.password">
+							<input type="password" id="<c:out value='${status.expression}'/>" 
+												name="<c:out value='${status.expression}'/>" 
+												value="<c:out value='${status.value}'/>" class="form-control"/>
 						</spring:bind>
 					</td>
 				</tr>
 				<tr>
 					<td><b>gender</b></td>
 					<td>
-						<spring:bind path="${commandObject.password}">
-							<input type="text" class="form-control" id="gender" name="gender"/>
+						<spring:bind path="commandObject.gender">
+							<input type="text" id="<c:out value='${status.expression}'/>" 
+												name="<c:out value='${status.expression}'/>" 
+												value="<c:out value='${status.value}'/>" class="form-control"/>
 						</spring:bind>
 					</td>
 				</tr>
 				<tr>
 					<td><b>Age</b></td>
 					<td>
-						<spring:bind path="${commandObject.age}">
-							<input type="text" class="form-control" id="age" name="age"/>
+						<spring:bind path="commandObject.age">
+							<input type="text" id="<c:out value='${status.expression}'/>" 
+												name="<c:out value='${status.expression}'/>" 
+												value="<c:out value='${status.value}'/>" class="form-control"/>
 						</spring:bind>
 					</td>
 				</tr>
